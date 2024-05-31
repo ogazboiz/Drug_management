@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../css/Footer.css';
+import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -15,17 +16,28 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-section">
-          <h3>Contact Us</h3>
+          <h3 style={{
+            marginLeft: '120px'
+          }}>Contact Us</h3>
           <p>Email: info@example.com</p>
           <p>Phone: +123 456 7890</p>
           <p>Address: 123 Main Street, Anytown, USA</p>
         </div>
         <div className="footer-section">
-          <h3>Follow Us</h3>
-          <ul className="social-media">
-            <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-            <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <h3 style={{
+            marginLeft: '80px'
+          }}>Follow Us</h3>
+          <ul className="social-media " style={{
+            display: 'flex',
+            listStyle: 'none',
+            justifyContent: 'space-around',
+            flexDirection: 'column',
+            width: '50%',
+            marginLeft: '50px'
+          }}>
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook/> Facebook</a></li>
+            <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter/> Twitter</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin/> LinkedIn</a></li>
           </ul>
         </div>
       </div>

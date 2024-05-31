@@ -30,7 +30,8 @@ const Navbar = () => {
         display: 'flex',
         listStyle: 'none',
         justifyContent: 'space-between',
-        width: '35%',
+        width: '40%',
+        marginLeft: '30px'
       
       }}>
         <li className="navbar-item text-sm">
