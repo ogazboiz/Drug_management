@@ -1,6 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
+
 import LoginAdmin from './components/login/LoginAdmin';
 import LoginPharmacy from './components/login/LoginPharmacy';
 import LoginHealthcare from './components/login/LoginHealthcare';
@@ -12,6 +13,7 @@ import SignupPatient from './components/signup/SignupPatient';
 import Signup from './pages/SignUp';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/navbar/Navbar';
+import Home from './pages/Home';
 
 function App() {
   
@@ -19,7 +21,7 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>} />
         <Route path="/login/admin" element={<LoginAdmin />} />
         <Route path="/login/pharmacy" element={<LoginPharmacy />} />
         <Route path="/login/healthcare" element={<LoginHealthcare />} />
