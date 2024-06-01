@@ -31,7 +31,7 @@
   .role-button {
     margin-bottom: 20px;
     padding: 14px 32px;
-    background-color: #007bff;
+    background-color:#4b2e83;
     color: #fff;
     border: none;
     border-radius: 25px;
@@ -43,7 +43,9 @@
   }
   
   .role-button:hover {
-    background-color: #0056b3;
+    background-color: #281253;
+    scale: 1.2;
+    transition: all 200ms ease-in-out
   }
   
   .login-link {
