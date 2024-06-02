@@ -1,0 +1,97 @@
+/* src/css/Reports.css */
+
+.reports {
+    padding: 2rem;
+    background-color: #f4f4f9;
+  }
+  
+  .reports h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .report-form {
+    margin-bottom: 2rem;
+  }
+  
+  .report-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .report-form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .report-form button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .report-form button:hover {
+    background-color: #4c51bf;
+  }
+  
+  .report-data {
+    margin-top: 2rem;
+  }
+  
+  .report-data h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .report-data table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  
+  .report-data th,
+  .report-data td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .report-data th {
+    background-color: #f4f4f9;
+  }
+  
+  .download-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .download-buttons button {
+    padding: 0.5rem 1rem;
+    background-color: #38a169;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .download-buttons button:hover {
+    background-color: #2f855a;
+  }
+  
+  .chart-container {
+    margin: 2rem 0;
+  }
+  
