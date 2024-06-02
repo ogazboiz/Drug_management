@@ -22,6 +22,14 @@ function Homepage() {
           <div className="feature-item">
             <h3>Inventory Management</h3>
             <p>Automate tracking of drug inventory to maintain optimal stock levels.</p>
+            {/* <button style={{
+              padding: '5px 10px',
+              fontWeight: '700',
+              color: '#4b2e83',
+              borderRadius: '5px',
+              border: 'none',
+              marginTop:
+            }}>More</button> */}
           </div>
           <div className="feature-item">
             <h3>Procurement Process</h3>

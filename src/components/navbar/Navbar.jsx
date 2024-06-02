@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../../css/navbar.css';
+import { FaBolt, FaHome, FaInfoCircle, FaPhone } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -25,18 +26,25 @@ const Navbar = () => {
           <img src="path_to_your_logo.png" alt="Logo" />
         </Link>
       </div>
-      <ul className="navbar-menu">
-        <li className="navbar-item">
-          <Link to="/" onClick={() => handleNavigation('home')}>Home</Link>
+      <ul className="navbar-menu" style={{
+        display: 'flex',
+        listStyle: 'none',
+        justifyContent: 'space-between',
+        width: '40%',
+        marginLeft: '30px'
+      
+      }}>
+        <li className="navbar-item text-sm">
+          <Link to="/" onClick={() => handleNavigation('home')}><FaHome/> Home</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/#features" onClick={() => handleNavigation('features')}>Features</Link>
+          <Link to="/#features" onClick={() => handleNavigation('features')}><FaBolt/> Features</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/#about" onClick={() => handleNavigation('about')}>About</Link>
+          <Link to="/#about" onClick={() => handleNavigation('about')}><FaInfoCircle/> About</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/#contact" onClick={() => handleNavigation('contact')}>Contact</Link>
+          <Link to="/#contact" onClick={() => handleNavigation('contact')}><FaPhone/> Contact</Link>
         </li>
       </ul>
       <div className="navbar-auth">

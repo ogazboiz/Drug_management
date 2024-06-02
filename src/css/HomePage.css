@@ -1,15 +1,17 @@
 .hero-section {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #4b2e83; /* Adjust based on your design */
     color: white;
-    padding: 180px 50px;
+    height: 70vh;
   }
   
   .hero-content {
-    width: 80%;
-    margin-right: 40px;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 70px;
+    margin-top: -10px;
   }
   a
   .hero-content h1 {
@@ -21,6 +23,8 @@
   
   .hero-content p {
     font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: left;
   }
   .hero-image{
     padding-left: 40px;
@@ -60,18 +64,22 @@
 }
 
 .cta-button {
-  background-color: #007bff;
-  color: #fff;
+  background-color:white;
+  color: #4b2e83;
+  font-weight: 700;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .features-section {
   padding: 2rem 0;
   text-align: center;
-  background: #abb8c3;
+  background: white;
+  margin-bottom: 20px;
 }
 
 .features-section h2 {
@@ -87,14 +95,19 @@
 }
 
 .feature-item {
-  background-color: #f8f9fa;
+  background-color: #4b2e83;
+  color: white;
   padding: 1rem;
   border-radius: 5px;
   max-width: 250px;
+  height: 200px;
+  align-items: center;
+
 }
 
 .feature-item h3 {
   font-size: 1.5rem;
+  margin-top: 35px;
 }
 
 .feature-item p {
@@ -104,7 +117,8 @@
 .about-section {
   padding: 2rem 0;
   text-align: center;
-  background: #abb8c3;
+  background: white;
+  border-top: 2px solid #4b2e83;
 }
 
 .about-section h2 {

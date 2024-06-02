@@ -5,6 +5,7 @@ body, ul, li, a, button {
     list-style: none;
     text-decoration: none;
     font-family: Arial, sans-serif;
+    font-weight: 500;
   }
   
   /* Make sure the body and html take up the full height */
@@ -18,9 +19,9 @@ body, ul, li, a, button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
+    background-color: #4b2e83;
     padding: 10px 0px;
-    border-bottom: 2px solid red;
+
     position: sticky; /* Ensures the navbar is fixed at the top */
     top: 0;
     left: 0;
@@ -34,15 +35,21 @@ body, ul, li, a, button {
   .navbar-menu {
     display: flex;
     gap: 20px;
+    width: 40%;
   }
   
   .navbar-item a {
-    color: black;
+    color: white;
     font-size: 16px;
   }
   
   .navbar-item a:hover {
-    color: red;
+    color: #4b2e83;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 200ms ease-in;
+    font-weight: 700;
   }
   
   .navbar-auth {
@@ -59,13 +66,15 @@ body, ul, li, a, button {
   }
   
   .login-button {
-    background-color: white;
-    color: black;
+    background-color: #4b2e83;
+    color: white;
   }
   
   .signup-button {
-    background-color: red;
-    color: white;
+    background-color: white;
+    color: #4b2e83;
+    font-weight: 700;
+    border-radius: 10px;
   }
   
   .login-button:hover,

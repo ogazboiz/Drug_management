@@ -1,7 +1,7 @@
 /* src/css/Footer.css */
 
 .footer {
-    background-color: #333;
+    background-color: #4b2e83;
     color: #fff;
     padding: 2rem 0;
     text-align: center;
@@ -34,6 +34,8 @@
   
   .footer-section ul li {
     margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
   }
   
   .footer-section ul li a {
@@ -58,8 +60,11 @@
     gap: 1rem;
   }
   
-  .social-media li {
-    display: inline;
+  .footer-section .social-media li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .social-media li a {
