@@ -1,12 +1,15 @@
-
+// src/components/login/LoginHealthcare.jsx
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import users from '../../data/users';
-import '../../css/Login.css'; 
+import '../../css/Login.css';
+
 const LoginPharmacy = ({ handleAuthentication }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,13 +17,14 @@ const LoginPharmacy = ({ handleAuthentication }) => {
     if (user) {
       handleAuthentication(true, 'pharmacy');
       setError('');
+      navigate('/dashboard/pharmacy/inventory-management');
     } else {
       setError('Invalid username or password');
     }
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Pharmacy Login</h2>
       <form onSubmit={handleSubmit}>
         <label>

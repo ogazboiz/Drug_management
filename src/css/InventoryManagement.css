@@ -1,0 +1,108 @@
+/* src/css/InventoryManagement.css */
+
+.inventory-management {
+    padding: 2rem;
+    background-color: #f4f4f9;
+  }
+  
+  .inventory-management h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .add-drug-form {
+    margin-bottom: 2rem;
+  }
+  
+  .add-drug-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .add-drug-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-drug-form button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-drug-form button:hover {
+    background-color: #4c51bf;
+  }
+  
+  .inventory-list {
+    margin-bottom: 2rem;
+  }
+  
+  .inventory-list h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .inventory-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .inventory-list th,
+  .inventory-list td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .inventory-list th {
+    background-color: #f4f4f9;
+  }
+  
+  .inventory-list td button {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .inventory-list td button:hover {
+    background-color: #c53030;
+  }
+  
+  .alerts {
+    margin-top: 2rem;
+  }
+  
+  .alerts h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .alerts ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .alerts li {
+    background-color: #fbd38d;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  

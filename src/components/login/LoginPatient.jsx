@@ -1,12 +1,15 @@
-
+// src/components/login/LoginHealthcare.jsx
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import users from '../../data/users';
-import '../../css/Login.css'; 
-const LoginPatient = ({ handleAuthentication }) => {
+import '../../css/Login.css';
+
+const LoginPharmacy = ({ handleAuthentication }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,13 +17,14 @@ const LoginPatient = ({ handleAuthentication }) => {
     if (user) {
       handleAuthentication(true, 'patient');
       setError('');
+      navigate('/dashboard/patient');
     } else {
       setError('Invalid username or password');
     }
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Patient Login</h2>
       <form onSubmit={handleSubmit}>
         <label>
@@ -46,4 +50,4 @@ const LoginPatient = ({ handleAuthentication }) => {
   );
 };
 
-export default LoginPatient;
+export default LoginPharmacy;

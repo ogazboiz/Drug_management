@@ -1,0 +1,104 @@
+/* src/css/UserManagement.css */
+
+.user-management {
+  padding: 2rem;
+}
+
+.user-management h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.user-management nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.user-management nav ul li {
+  display: inline;
+}
+
+.user-management nav ul li a {
+  padding: 0.5rem 1rem;
+  background-color: #5a67d8;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.user-management nav ul li a:hover {
+  background-color: #4c51bf;
+}
+
+.user-list {
+  margin-top: 1rem;
+}
+
+.user-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-list table th,
+.user-list table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.user-list table th {
+  background-color: #f2f2f2;
+}
+
+.user-list table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-list table tr:hover {
+  background-color: #ddd;
+}
+
+.add-user,
+.edit-user {
+  margin-top: 1rem;
+}
+
+.add-user form,
+.edit-user form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-user form label,
+.edit-user form label {
+  margin-bottom: 1rem;
+}
+
+.add-user form input,
+.edit-user form input,
+.add-user form select,
+.edit-user form select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-user form button,
+.edit-user form button {
+  padding: 0.5rem 1rem;
+  background-color: #5a67d8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-user form button:hover,
+.edit-user form button:hover {
+  background-color: #4c51bf;
+}

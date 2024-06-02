@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import '../../css/AdminDashboard.css';
 import Sidebar from '../sidebar/Sidebar';
 import Overview from '../sidebar/Overview';
-import UserManagement from '../sidebar/UserManagement';
+import UserManagement from '../userManagement/UserManagement';
 import InventoryManagement from '../sidebar/InventoryManagement';
 import Reports from '../sidebar/Reports';
 import Settings from '../sidebar/Settings';
